@@ -1,0 +1,113 @@
+:root {
+    --border: #a0a0a093;
+    --delete: #d85d5d;
+    --edit: #555a88a9;
+    --gold: #caca00;
+    --platinum: #eee7e9;
+}
+
+.usercard {
+    width: 300px;
+    border: 2px solid var(--border);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.usercard__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.usercard__list {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.usercard__item {
+    display: flex;
+    font-weight: 900;
+    flex-direction: column;
+
+}
+
+.usercard__container {
+    padding-top: 5px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.usercard__item span:first-child {
+    color: #999;
+}
+
+.usercard__image {
+    border-radius: 50%;
+    border: 3.5px solid var(--edit);
+}
+
+.usercard__email_text {
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.usercard__btn {
+    padding: 7.5px 7.5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usercard__btn ion-icon {
+    width: 17px;
+    height: 17px;
+}
+
+.delete {
+    background-color: var(--delete);
+    color: var(--platinum);
+}
+
+.update {
+    background-color: var(--edit);
+    color: var(--platinum);
+}
+
+
+
+@media (width < 321px) {
+    .usercard {
+        width: 90%;
+        font-size: 0.85rem;
+    }
+
+    .usercard__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .usercard__name {
+        padding-top: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .usercard__image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .usercard__container {
+        justify-content: space-evenly;
+    }
+}

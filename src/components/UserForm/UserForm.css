@@ -1,0 +1,88 @@
+:root {
+    --btn-x: #8a8a8a;
+    --form: #f7f7f7;
+    --bg-form: #9797973a;
+    --bg-button: #555a88;
+    --bg-box-form: #3a2b2bdc;
+    --color-box-shadow: #8b8b8be6;
+    --gold: #caca00;
+    --white-pure: #ffffff;
+}
+
+.userform {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    /**/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-form);
+    /*Dynamic*/
+    transform: scale(0);
+    transition: transform 0.5s;
+    z-index: 20;
+}
+
+.userform.active {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.userform__form {
+    width: 300px;
+    background-color: var(--form);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.userform__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userform__btn-x {
+    padding: 0;
+    background-color: transparent;
+}
+
+.userform__btn-x ion-icon {
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--btn-x);
+    background-color: var(--white-pure);
+    border-radius: 50%;
+    color: var(--btn-x);
+}
+
+.userform__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.userform__btn {
+    margin: 15px 0 0 0;
+    border: none;
+    padding: 10px;
+    color: var(--platinum);
+    background-color: var(--bg-button);
+    box-shadow: 0 0 10px var(--color-box-shadow);
+    transition: transform 0.5s,
+                filter 0.5s;
+}
+
+.userform__btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.25);
+    transition: transform 0.5s,
+                filter 0.5s;
+}

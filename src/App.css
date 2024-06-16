@@ -1,0 +1,53 @@
+:root {
+    --bg-color: #000000;
+    --btn-create: #555a88a9;
+}
+
+.app {
+    background-color: var(--bg-color);
+    padding: 50px 50px 10px;
+    min-height: calc(100vh - 80px);
+}
+
+.app__header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app__container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.app__btn {
+    padding: 5px 10px 5px 15px;
+    background-color: var(--btn-create);
+    color: #f0f0f0;
+}
+
+.app__loading-message {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (width < 455px) {
+    .app {
+        padding: 20px 0 0 0;
+    }
+    .app__header {
+        padding-bottom: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}

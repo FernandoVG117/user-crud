@@ -1,5 +1,5 @@
-# **⚜ USER CRUD ⚜**
-This project is a web application developed in React that implements a complete user management system. Utilizing custom hooks and following the ***CRUD method (Create, Read, Update, and Delete)***, the application allows users to register their personal information, including name, email, birthday, and a URL to upload a profile picture. Additionally, users can update their information and delete existing records.
+# **⚜ PROJECT METHOD CRUD ⚜**
+This project is a web application developed in React that implements a complete user management system. Utilizing custom hooks and following the ***CRUD method (Create, Read, Update, and Delete)***, the application allows users to register their personal information, including name, email, birthday, and a URL to upload a profile picture. Additionally, users can update their information and delete existing records. 
 
 ## **⭐ KEY FEATURES**
 1. Intuitive User Interface: The application features a user-friendly interface designed to facilitate navigation and the use of ***CRUD*** functionalities.
